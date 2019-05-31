@@ -13,9 +13,9 @@ int main()
 	v.push_back(2);
 	v.push_back(2);
 	v.push_back(2);
-	v.push_back(6);
+	v.push_back(3);
 
-	Animador anim("..\\Imagens\\Personagens\\Player1.png", 6, 3, v);
+	Animador anim("..\\Imagens\\Personagens\\Player1.png", 6, 3, v, Vector2f(300,300));
 	Jogo jogo;
 	jogo.main();
 

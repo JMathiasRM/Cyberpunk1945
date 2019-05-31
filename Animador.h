@@ -17,10 +17,24 @@ private:
 	unsigned int N_ANIMACOES;
 	vector<unsigned int> frames_por_animacao;
 
+	float dT_por_frame;
+	float dT_acumulado;
+	unsigned int frame_atual;
+
+	Vector2f razao;
+
+	enum Type {A, B, C};
+
+public:
+
+	int TIPO_DE_ANIMACAO;
+
 public:
 	Animador(const char* IMG_PATH = "", unsigned int n_linhas = 0, unsigned int n_colunas = 0,
-			const vector<unsigned int>& frames_por_animacao = vector<unsigned int>());
+			const vector<unsigned int>& frames_por_animacao = vector<unsigned int>(), Vector2f tamanho = Vector2f(0,0));
 	~Animador();
+
+	void atualizarAnimacao(float dT);
 };
 
 #endif // ANIMADOR_H__

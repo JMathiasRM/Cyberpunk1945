@@ -1,6 +1,7 @@
 #include "Animador.h"
 
-Animador::Animador(const char* IMG_PATH, unsigned int n_linhas, unsigned int n_colunas, const vector<unsigned int>& frames_por_animacao):
+Animador::Animador(const char* IMG_PATH, unsigned int n_linhas, unsigned int n_colunas,
+					const vector<unsigned int>& frames_por_animacao, Vector2f tamanho):
 	frames_por_animacao(frames_por_animacao)
 {
 	if(IMG_PATH != "" && frames_por_animacao.size() > 0)
@@ -22,11 +23,13 @@ Animador::Animador(const char* IMG_PATH, unsigned int n_linhas, unsigned int n_c
 		Vector2u clip_tamanho(textura.getSize().x / n_colunas, textura.getSize().y / n_linhas);
 		IntRect clip(0, 0, clip_tamanho.x, clip_tamanho.y);
 
+		razao = Vector2f(tamanho.x/clip_tamanho.x, tamanho.y/clip_tamanho.y);
+
 		for (unsigned int linha = 0; linha < N_ANIMACOES; linha++) {
 			for (unsigned int frame = 0; frame < this->frames_por_animacao.at(linha); frame++) {
 				sprites[linha][frame].setTexture(textura);
 				sprites[linha][frame].setTextureRect(clip);
-				sprites[linha][frame].setScale(5, 5);
+				sprites[linha][frame].setScale(razao);
 				clip.left += clip_tamanho.x;
 			}
 			clip.left = 0;
@@ -36,20 +39,28 @@ Animador::Animador(const char* IMG_PATH, unsigned int n_linhas, unsigned int n_c
 
 	RenderWindow window(VideoMode(800, 600), "a");
 
-	while(1)
-	for (unsigned int linha = 0; linha < N_ANIMACOES; linha++) {
-		for (unsigned int frame = 0; frame < this->frames_por_animacao[linha]; frame++) {
-			window.clear();
-			window.draw(sprites[linha][frame]);
-			window.display();
+	Type x = A;
 
-			Time t = seconds(1);
-			sleep(t);
-		}
-	}
+	while(1)
+	
 }
 
 
 Animador::~Animador()
 {
+}
+
+void Animador::atualizarAnimacao(float dT)
+{
+	dT_acumulado += dT;
+	if (dT_acumulado > dT_por_frame) {
+		dT_acumulado -= dT_por_frame;
+
+		for (unsigned int frame = 0; true; frame++) {
+			if (frame > frames_por_animacao.at(TIPO_DE_ANIMACAO))
+				frame = 0;
+
+			//window.draw(sprites[TIPO_DE_ANIMACAO][frame]);
+		}
+	}
 }
