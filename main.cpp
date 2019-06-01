@@ -7,15 +7,9 @@ using namespace std;
 
 int main()
 {
-	vector<unsigned int> v;
-	v.push_back(2);
-	v.push_back(2);
-	v.push_back(2);
-	v.push_back(2);
-	v.push_back(2);
-	v.push_back(3);
+	vector<unsigned int> v{2,2,2,2,2,3};
 
-	Animador anim("..\\Imagens\\Personagens\\Player1.png", 6, 3, v, Vector2f(300,300));
+	Animador anim("..\\Imagens\\Personagens\\Player1.png", 6, 3, v, Vector2f(300, 300));
 	Jogo jogo;
 	jogo.main();
 

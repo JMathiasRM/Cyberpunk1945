@@ -124,12 +124,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Animador.cpp" />
+    <ClCompile Include="Elemento.cpp" />
+    <ClCompile Include="Entidade.cpp" />
     <ClCompile Include="Jogo.cpp" />
+    <ClCompile Include="Lista.cpp" />
+    <ClCompile Include="ListasDeEntidades.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animador.h" />
+    <ClInclude Include="Elemento.h" />
+    <ClInclude Include="Entidade.h" />
     <ClInclude Include="Jogo.h" />
+    <ClInclude Include="Lista.h" />
+    <ClInclude Include="ListasDeEntidades.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

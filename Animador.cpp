@@ -6,6 +6,7 @@ Animador::Animador(const char* IMG_PATH, unsigned int n_linhas, unsigned int n_c
 {
 	if(IMG_PATH != "" && frames_por_animacao.size() > 0)
 	{
+		// Carregando uma imagem, tirando o fundo e transformando em uma textura
 		Image img;
 		img.loadFromFile(IMG_PATH);
 		img.createMaskFromColor(Color::Black);
@@ -14,7 +15,7 @@ Animador::Animador(const char* IMG_PATH, unsigned int n_linhas, unsigned int n_c
 		textura.loadFromImage(img);
 		N_ANIMACOES = n_linhas;
 
-		// Sprites
+		// Criando a matriz de sprites com os tamanhos e recortes da textura adequados
 		sprites = new Sprite*[N_ANIMACOES];
 		for (unsigned int i = 0; i < N_ANIMACOES; i++) {
 			sprites[i] = new Sprite[this->frames_por_animacao.at(i)];
@@ -36,18 +37,15 @@ Animador::Animador(const char* IMG_PATH, unsigned int n_linhas, unsigned int n_c
 			clip.top += clip_tamanho.y;
 		}
 	}
-
-	RenderWindow window(VideoMode(800, 600), "a");
-
-	Type x = A;
-
-	while(1)
-	
 }
 
 
 Animador::~Animador()
 {
+	for (unsigned int linha = 0; linha < N_ANIMACOES; linha++) {
+		delete[] sprites[linha];
+	}
+	delete sprites;
 }
 
 void Animador::atualizarAnimacao(float dT)
@@ -60,7 +58,7 @@ void Animador::atualizarAnimacao(float dT)
 			if (frame > frames_por_animacao.at(TIPO_DE_ANIMACAO))
 				frame = 0;
 
-			//window.draw(sprites[TIPO_DE_ANIMACAO][frame]);
+			janela_do_jogo->draw(sprites[TIPO_DE_ANIMACAO][frame]);
 		}
 	}
 }
