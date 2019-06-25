@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Atirador.h" />
+    <ClInclude Include="include\ChefaoFinal.h" />
+    <ClInclude Include="include\Fase2.h" />
+    <ClInclude Include="include\Armadilha.h" />
+    <ClInclude Include="include\Arame.h" />
+    <ClInclude Include="include\Carro.h" />
+    <ClInclude Include="include\Colisor.h" />
+    <ClInclude Include="include\Entidade.h" />
+    <ClInclude Include="include\EstadoDeMenu.h" />
+    <ClInclude Include="include\Fase.h" />
+    <ClInclude Include="include\Fase1.h" />
+    <ClInclude Include="include\GerenciadorGrafico.h" />
+    <ClInclude Include="include\Imagem.h" />
+    <ClInclude Include="include\Inimigo.h" />
+    <ClInclude Include="include\Jogador.h" />
+    <ClInclude Include="include\Jogo.h" />
+    <ClInclude Include="include\Lista.h" />
+    <ClInclude Include="include\ListaDeEntidades.h" />
+    <ClInclude Include="include\Menu.h" />
+    <ClInclude Include="include\MenuPrincipal.h" />
+    <ClInclude Include="include\Obstaculo.h" />
+    <ClInclude Include="include\Personagem.h" />
+    <ClInclude Include="include\Plataforma.h" />
+    <ClInclude Include="include\Projetil.h" />
+    <ClInclude Include="include\SelecaoDeFase.h" />
+    <ClInclude Include="include\Soldado.h" />
+    <ClInclude Include="include\Tanque.h" />
+    <ClInclude Include="include\Texto.h" />
+    <ClInclude Include="include\Mina.h" />
+    <ClInclude Include="include\Moeda.h" />
+    <ClInclude Include="include\ListaDeInimigos.h" />
+    <ClInclude Include="include\ListaDeMoedas.h" />
+    <ClInclude Include="include\ListaDeObstaculos.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\Lista.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="script\ListaDeInimigos.cpp" />
+    <ClCompile Include="script\ListaDeMoedas.cpp" />
+    <ClCompile Include="script\ListaDeObstaculos.cpp" />
+    <ClCompile Include="script\Atirador.cpp" />
+    <ClCompile Include="script\ChefaoFinal.cpp" />
+    <ClCompile Include="script\Fase2.cpp" />
+    <ClCompile Include="script\Arame.cpp" />
+    <ClCompile Include="script\Fase1.cpp" />
+    <ClCompile Include="script\Moeda.cpp" />
+    <ClCompile Include="script\Armadilha.cpp" />
+    <ClCompile Include="script\Mina.cpp" />
+    <ClCompile Include="script\Carro.cpp" />
+    <ClCompile Include="script\Colisor.cpp" />
+    <ClCompile Include="script\Entidade.cpp" />
+    <ClCompile Include="script\EstadoDeMenu.cpp" />
+    <ClCompile Include="script\Fase.cpp" />
+    <ClCompile Include="script\GerenciadorGrafico.cpp" />
+    <ClCompile Include="script\Imagem.cpp" />
+    <ClCompile Include="script\Inimigo.cpp" />
+    <ClCompile Include="script\Jogador.cpp" />
+    <ClCompile Include="script\Jogo.cpp" />
+    <ClCompile Include="script\ListaDeEntidades.cpp" />
+    <ClCompile Include="script\main.cpp" />
+    <ClCompile Include="script\Menu.cpp" />
+    <ClCompile Include="script\MenuPrincipal.cpp" />
+    <ClCompile Include="script\Obstaculo.cpp" />
+    <ClCompile Include="script\Personagem.cpp" />
+    <ClCompile Include="script\Plataforma.cpp" />
+    <ClCompile Include="script\Projetil.cpp" />
+    <ClCompile Include="script\SelecaoDeFase.cpp" />
+    <ClCompile Include="script\Soldado.cpp" />
+    <ClCompile Include="script\Tanque.cpp" />
+    <ClCompile Include="script\Texto.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{3D94A181-E28F-4863-8375-050FA384FE17}</ProjectGuid>
+    <RootNamespace>Cyberpunk1945</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;../SFML/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>script;../SFML/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;sfml-network-d.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SFML\include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)SFML\lib;script;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;sfml-network-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;../SFML/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>script;../SFML/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-audio.lib;sfml-network.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SFML\include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)SFML\lib;script;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;sfml-network-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

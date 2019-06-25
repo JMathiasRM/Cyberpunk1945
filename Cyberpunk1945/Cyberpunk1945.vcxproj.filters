@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Arquivos de Origem">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Recurso">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Listagem">
+      <UniqueIdentifier>{fe7a6595-5249-449c-909c-a20d0b517220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Listagem">
+      <UniqueIdentifier>{c4ad8fe1-6c69-433b-9299-57d09e3a2be0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Fases">
+      <UniqueIdentifier>{ca6d8590-6167-4c6c-a11e-f015a06a8034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Fases">
+      <UniqueIdentifier>{a78c4daa-ef95-4cfa-be33-47fc9ddf0469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Obstáculos">
+      <UniqueIdentifier>{4df3c689-0ab7-4330-b26a-2be925957478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Obstáculos">
+      <UniqueIdentifier>{3fe295e5-a48d-4862-98ae-51e2397a8798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Gráficos">
+      <UniqueIdentifier>{0e3e3217-7e4d-45a7-b9f3-d672bdd3a815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Gráficos">
+      <UniqueIdentifier>{1a20527e-2606-472e-a934-cac6679dd6d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Personagens">
+      <UniqueIdentifier>{825b7754-a905-4c59-a442-fe7341776ed9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Personagens">
+      <UniqueIdentifier>{1af44231-933a-4f7b-80d1-20e4008df448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Menu">
+      <UniqueIdentifier>{7b6374a9-14b3-4a9f-a7a0-aec6394356da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Menu">
+      <UniqueIdentifier>{b489b146-8020-48fc-84c6-e27dc6faaae7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Colisor.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Entidade.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Jogo.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MenuPrincipal.h">
+      <Filter>Arquivos de Cabeçalho\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GerenciadorGrafico.h">
+      <Filter>Arquivos de Cabeçalho\Gráficos</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Imagem.h">
+      <Filter>Arquivos de Cabeçalho\Gráficos</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Texto.h">
+      <Filter>Arquivos de Cabeçalho\Gráficos</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Lista.h">
+      <Filter>Arquivos de Cabeçalho\Listagem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tanque.h">
+      <Filter>Arquivos de Cabeçalho\Personagens</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Soldado.h">
+      <Filter>Arquivos de Cabeçalho\Personagens</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Personagem.h">
+      <Filter>Arquivos de Cabeçalho\Personagens</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Jogador.h">
+      <Filter>Arquivos de Cabeçalho\Personagens</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Inimigo.h">
+      <Filter>Arquivos de Cabeçalho\Personagens</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Carro.h">
+      <Filter>Arquivos de Cabeçalho\Personagens</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Obstaculo.h">
+      <Filter>Arquivos de Cabeçalho\Obstáculos</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Fase1.h">
+      <Filter>Arquivos de Cabeçalho\Fases</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Fase.h">
+      <Filter>Arquivos de Cabeçalho\Fases</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SelecaoDeFase.h">
+      <Filter>Arquivos de Cabeçalho\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Menu.h">
+      <Filter>Arquivos de Cabeçalho\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EstadoDeMenu.h">
+      <Filter>Arquivos de Cabeçalho\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Plataforma.h">
+      <Filter>Arquivos de Cabeçalho\Obstáculos</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ListaDeEntidades.h">
+      <Filter>Arquivos de Cabeçalho\Listagem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Mina.h">
+      <Filter>Arquivos de Cabeçalho\Obstáculos</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Arame.h">
+      <Filter>Arquivos de Cabeçalho\Obstáculos</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Armadilha.h">
+      <Filter>Arquivos de Cabeçalho\Obstáculos</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Moeda.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Fase2.h">
+      <Filter>Arquivos de Cabeçalho\Fases</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ChefaoFinal.h">
+      <Filter>Arquivos de Cabeçalho\Personagens</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Atirador.h">
+      <Filter>Arquivos de Cabeçalho\Personagens</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Projetil.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ListaDeObstaculos.h">
+      <Filter>Arquivos de Cabeçalho\Listagem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ListaDeMoedas.h">
+      <Filter>Arquivos de Cabeçalho\Listagem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ListaDeInimigos.h">
+      <Filter>Arquivos de Cabeçalho\Listagem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="script\Colisor.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Entidade.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Jogo.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="script\main.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Fase.cpp">
+      <Filter>Arquivos de Origem\Fases</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Obstaculo.cpp">
+      <Filter>Arquivos de Origem\Obstáculos</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Carro.cpp">
+      <Filter>Arquivos de Origem\Personagens</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Inimigo.cpp">
+      <Filter>Arquivos de Origem\Personagens</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Soldado.cpp">
+      <Filter>Arquivos de Origem\Personagens</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Tanque.cpp">
+      <Filter>Arquivos de Origem\Personagens</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Personagem.cpp">
+      <Filter>Arquivos de Origem\Personagens</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Jogador.cpp">
+      <Filter>Arquivos de Origem\Personagens</Filter>
+    </ClCompile>
+    <ClCompile Include="script\EstadoDeMenu.cpp">
+      <Filter>Arquivos de Origem\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="script\SelecaoDeFase.cpp">
+      <Filter>Arquivos de Origem\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Menu.cpp">
+      <Filter>Arquivos de Origem\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="script\MenuPrincipal.cpp">
+      <Filter>Arquivos de Origem\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Texto.cpp">
+      <Filter>Arquivos de Origem\Gráficos</Filter>
+    </ClCompile>
+    <ClCompile Include="script\GerenciadorGrafico.cpp">
+      <Filter>Arquivos de Origem\Gráficos</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Imagem.cpp">
+      <Filter>Arquivos de Origem\Gráficos</Filter>
+    </ClCompile>
+    <ClCompile Include="script\ListaDeEntidades.cpp">
+      <Filter>Arquivos de Origem\Listagem</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Plataforma.cpp">
+      <Filter>Arquivos de Origem\Obstáculos</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Mina.cpp">
+      <Filter>Arquivos de Origem\Obstáculos</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Armadilha.cpp">
+      <Filter>Arquivos de Origem\Obstáculos</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Moeda.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Fase1.cpp">
+      <Filter>Arquivos de Origem\Fases</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Arame.cpp">
+      <Filter>Arquivos de Origem\Obstáculos</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Fase2.cpp">
+      <Filter>Arquivos de Origem\Fases</Filter>
+    </ClCompile>
+    <ClCompile Include="script\ChefaoFinal.cpp">
+      <Filter>Arquivos de Origem\Personagens</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Atirador.cpp">
+      <Filter>Arquivos de Origem\Personagens</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Projetil.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="script\ListaDeObstaculos.cpp">
+      <Filter>Arquivos de Origem\Listagem</Filter>
+    </ClCompile>
+    <ClCompile Include="script\ListaDeMoedas.cpp">
+      <Filter>Arquivos de Origem\Listagem</Filter>
+    </ClCompile>
+    <ClCompile Include="script\ListaDeInimigos.cpp">
+      <Filter>Arquivos de Origem\Listagem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\Lista.inl">
+      <Filter>Arquivos de Cabeçalho\Listagem</Filter>
+    </None>
+  </ItemGroup>
+</Project>
